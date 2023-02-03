@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height: 100vh; */
+    width: 100vw;
+    /* padding: 1rem; */
+
+}
+
+.result {
+    width: 100vw;
+    min-height: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pokemon {
+    border: 1px solid black;
+    border-radius: 5px;
+    /* background-color: bisque; */
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    font-size: small;
+    color: grey;
+}
