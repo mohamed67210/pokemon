@@ -15,15 +15,15 @@ for (let i = 1; i <= nbPokemon; i++) {
         .then((pokemon) => {
             // console.log(pokemon.id)
             // pour afficher les 0 devant le id 
-            div.innerHTML += ("00" + pokemon.id).slice(-3)
-            div.innerHTML += "<br>" + pokemon.name + "<br><p>" + pokemon.types[0].type.name + "</p>"
+            div.innerHTML += "<p class='id'>" + ("00" + pokemon.id).slice(-3) + '</p>'
+            div.innerHTML += pokemon.name + "<br><p>" + pokemon.types[0].type.name + "</p>"
             // declarer array pour stocker les couleurs par apport au type de pokemon
             let colors = {
                 bug: ['#00312B', { iconType: '<i class="fa-solid fa-bug"></i>', iconColor: 'green' }],
                 water: ['#03D9F4', { iconType: '<i class="fa-solid fa-droplet"></i>', iconColor: 'blue' }],
                 fire: ['#D95204', { iconType: '<i class="fa-solid fa-fire"></i>', iconColor: 'red' }],
                 electric: ['#749B78', { iconType: '<i class="fa-solid fa-bolt"></i>', iconColor: 'yellow' }],
-                grass: ['#E3C998', { iconType: '<i class="fa-solid fa-tree"></i>',iconColor: 'green' }],
+                grass: ['#E3C998', { iconType: '<i class="fa-solid fa-tree"></i>', iconColor: 'green' }],
                 fighting: ['red', { iconType: '<i class="fa-solid fa-fire"></i>' }],
                 ground: ['#97A677', { iconType: '<i class="fa-solid fa-diamond"></i>' }],
                 normal: ['#FF6969', { iconType: '<i class="fa-solid fa-circle"></i>' }],
